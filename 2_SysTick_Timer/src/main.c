@@ -22,10 +22,12 @@ static void gpio_setup(void)
 
 void systick_setup(void)
 {
-    systick_set_clocksource(STK_CSR_CLKSOURCE_AHB);
+    
+    /*If you wish to use clock/8 then uncomment line 30 and comment systick_set_frequency(1000000, 72e6)*/
+    //systick_set_clocksource(STK_CSR_CLKSOURCE_AHB_DIV8);
 
     systick_set_frequency(1000000, 72e6);
-
+    //systick_set_reload(8);
     systick_interrupt_enable();
 
     systick_counter_enable();
