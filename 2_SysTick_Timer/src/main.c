@@ -63,7 +63,6 @@ int main(void)
     {
         gpio_toggle(GREEN_LED_PORT, GREEN_LED_PIN);
         delay_ms(1000);
-        gpio_toggle(GREEN_LED_PORT, GREEN_LED_PIN);
     }
 
     return 0;
