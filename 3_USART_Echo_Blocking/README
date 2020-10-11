@@ -1,0 +1,17 @@
+## Directory structure for projects:
+
+|--Project
+|  |
+|  |--include
+|  |  |--main.h
+|  |--lib
+|  |  |--gpio
+|  |  |--rcc
+|  |  |--usart
+|  |--src
+|  |  |--main.c
+
+### Important Points
+- `src` should contain application level source files
+- `include` should contain application level header files
+- `lib` should contain peripheral libraries, device drivers, etc.
