@@ -7,8 +7,10 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/rcc.h>
 
+
 #include <rcc.h>
 #include <gpio.h>
+#include <usart.h>
 
 extern void system_init(void);
 
